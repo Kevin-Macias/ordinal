@@ -1,0 +1,14 @@
+generator client {
+  provider = "prisma-client"
+  output   = "../generated/client"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model SystemProbe {
+  id        Int      @id @default(1)
+  createdAt DateTime @default(now())
+}
+

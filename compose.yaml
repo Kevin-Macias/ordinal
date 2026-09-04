@@ -1,0 +1,19 @@
+services:
+  postgres:
+    image: postgres:17-alpine
+    environment:
+      POSTGRES_DB: ordinal
+      POSTGRES_PASSWORD: ordinal
+      POSTGRES_USER: ordinal
+    healthcheck:
+      test: ['CMD-SHELL', 'pg_isready -U ordinal -d ordinal']
+      interval: 5s
+      timeout: 5s
+      retries: 10
+    ports:
+      - '5432:5432'
+    volumes:
+      - ordinal-postgres:/var/lib/postgresql/data
+
+volumes:
+  ordinal-postgres:

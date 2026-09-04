@@ -1,0 +1,33 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Build and generated output
+dist/
+.output/
+.vinxi/
+.nitro/
+.turbo/
+coverage/
+apps/web/src/routeTree.gen.ts
+packages/database/generated/
+*.tsbuildinfo
+
+# Environment and credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Logs and local state
+*.log
+.DS_Store
+.idea/
+.vscode/
+tmp/
+temp/
+
+# All documentation under docs/, README.md, and AGENTS.md is intentionally
+# public and versioned. Never put secrets or private notes in those files.
+

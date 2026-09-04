@@ -1,0 +1,29 @@
+{
+  "name": "ordinal",
+  "version": "0.0.0",
+  "private": true,
+  "packageManager": "pnpm@11.18.0",
+  "engines": {
+    "node": ">=24.0.0"
+  },
+  "scripts": {
+    "build": "turbo run build",
+    "check": "turbo run check",
+    "dev": "turbo run dev",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "lint": "turbo run lint",
+    "test": "turbo run test",
+    "test:e2e": "pnpm --filter @ordinal/api test:e2e",
+    "typecheck": "turbo run typecheck",
+    "db:generate": "pnpm --filter @ordinal/database generate",
+    "db:migrate": "pnpm --filter @ordinal/database migrate",
+    "db:deploy": "pnpm --filter @ordinal/database migrate:deploy",
+    "db:studio": "pnpm --filter @ordinal/database studio"
+  },
+  "devDependencies": {
+    "prettier": "^3.8.1",
+    "turbo": "^2.10.12",
+    "typescript": "^6.0.2"
+  }
+}

@@ -1,0 +1,7 @@
+CREATE TABLE "SystemProbe" (
+    "id" INTEGER NOT NULL DEFAULT 1,
+    "createdAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
+
+    CONSTRAINT "SystemProbe_pkey" PRIMARY KEY ("id")
+);
+
